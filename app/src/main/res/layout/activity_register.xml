@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/home"
+        android:minHeight="100dp"
+        android:minWidth="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/Reg_img_1"
+        />
+
+    <ImageView
+        android:id="@+id/regis_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_below="@id/Reg_img_1"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:id="@+id/Reg_txt_1"/>
+
+    <ImageView
+        android:id="@+id/Reg_img_2"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/Reg_img_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-100dp"
+        android:minWidth="100dp"
+        android:minHeight="100dp"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/Reg_txt_1"
+        android:padding="30dp"
+        android:id="@+id/lyR_1">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:height="50dp"
+            android:background="@color/cardview_shadow_start_color"
+            android:hint="Masukan nama"
+            android:id="@+id/edtR_nama"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:height="50dp"
+            android:background="@color/cardview_shadow_start_color"
+            android:hint="Masukan No HP"
+            android:layout_marginTop="20dp"
+            android:id="@+id/edtR_nohp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:background="@color/cardview_shadow_start_color"
+            android:height="50dp"
+            android:hint="Masukan Password"
+            android:id="@+id/edtR_password"
+            android:layout_marginTop="20dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:background="@color/cardview_shadow_start_color"
+            android:height="50dp"
+            android:hint="Konfirmasi Ulang Password"
+            android:id="@+id/edtR_konfirpass"
+            android:layout_marginTop="20dp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/lyR_1"
+        android:id="@+id/Reg_btn_1"/>
+
+</RelativeLayout>

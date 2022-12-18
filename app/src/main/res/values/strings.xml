@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Huni App</string>
+    <string name="hunian_name">Hunian Name</string>
+    <string name="hunian_deskripsi">Hunian Deskripsi</string>
+    <string name="alamat" />
+    <string name="no_hp">No HP        :</string>
+    <string name="nama_diri">Nama Diri  :</string>
+    <string name="nama_kost">Nama Kost    :</string>
+    <string name="alamat_kost">Alamat Kost  :</string>
+    <string name="hrg_kost">Harga Kost    :</string>
+</resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/home"
+        android:minHeight="100dp"
+        android:minWidth="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="60dp"
+        android:id="@+id/R_img_1"
+        android:rotation="270"
+        />
+
+    <FrameLayout
+        android:id="@+id/flDash2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#61d6fa"
+        android:layout_marginTop="50dp"
+        android:minWidth="350dp"
+        android:minHeight="200dp"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/dash_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/person"
+            android:minHeight="50dp"
+            android:minWidth="50dp"
+            android:layout_margin="10dp"
+            android:labelFor="@+id/dash_welcome"/>
+
+        <TextView
+            android:id="@+id/dash_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selamat datang, Erick"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:padding="20dp"
+
+            android:layout_gravity="center_horizontal"
+            />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/cari_partner"
+        android:drawableTop="@drawable/person_search"
+        android:drawableTint="@color/white"
+        android:width="150dp"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:background="#61d6fa"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:text="Cari Partner"
+        android:layout_below="@+id/flDash2"/>
+
+    <Button
+        android:id="@+id/cari_kost"
+        android:width="150dp"
+        android:layout_height="100dp"
+        android:layout_width="wrap_content"
+        android:textSize="18sp"
+        android:drawableTop="@drawable/kost_add"
+        android:drawableTint="@color/white"
+        android:layout_marginTop="50dp"
+        android:background="#61d6fa"
+        android:layout_marginLeft="220dp"
+        android:text="Cari Kost"
+        android:layout_below="@+id/flDash2"/>
+
+    <Button
+        android:id="@+id/cari_hunian"
+        android:width="150dp"
+        android:drawableTop="@drawable/kost_add"
+        android:drawableTint="@color/white"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_height="100dp"
+        android:background="#61d6fa"
+        android:layout_marginLeft="120dp"
+        android:text="Cari Hunian"
+        android:layout_below="@+id/flDash2"/>
+
+   <com.google.android.material.bottomnavigation.BottomNavigationView
+       android:id="@+id/bottom_nav_menu"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="#61d6fa"
+       android:layout_alignParentBottom="true"
+       app:menu="@menu/bottom_menu"
+       app:itemTextColor="@color/white"
+       app:itemIconTint="@color/white"/>
+
+    <FrameLayout
+        android:id="@+id/flDash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
